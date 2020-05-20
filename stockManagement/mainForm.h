@@ -35,6 +35,7 @@ namespace stockManagement {
 			}
 		}
 	private: System::Windows::Forms::Label^ label1;
+
 	protected:
 
 	protected:
@@ -81,5 +82,5 @@ namespace stockManagement {
 	private: System::Void mainForm_Load(System::Object^ sender, System::EventArgs^ e) {
 		label1->Text = "test bismilah 2";
 	}
-	};
+};
 }
