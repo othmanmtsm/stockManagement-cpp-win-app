@@ -34,6 +34,10 @@ namespace stockManagement {
 				delete components;
 			}
 		}
+	private: System::Windows::Forms::Label^ label1;
+	protected:
+
+	protected:
 
 	private:
 		/// <summary>
@@ -48,12 +52,34 @@ namespace stockManagement {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->components = gcnew System::ComponentModel::Container();
-			this->Size = System::Drawing::Size(300,300);
-			this->Text = L"mainForm";
-			this->Padding = System::Windows::Forms::Padding(0);
+			this->label1 = (gcnew System::Windows::Forms::Label());
+			this->SuspendLayout();
+			// 
+			// label1
+			// 
+			this->label1->AutoSize = true;
+			this->label1->Location = System::Drawing::Point(281, 144);
+			this->label1->Name = L"label1";
+			this->label1->Size = System::Drawing::Size(46, 17);
+			this->label1->TabIndex = 0;
+			this->label1->Text = L"label1";
+			// 
+			// mainForm
+			// 
+			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->ClientSize = System::Drawing::Size(733, 390);
+			this->Controls->Add(this->label1);
+			this->Name = L"mainForm";
+			this->Text = L"mainForm";
+			this->Load += gcnew System::EventHandler(this, &mainForm::mainForm_Load);
+			this->ResumeLayout(false);
+			this->PerformLayout();
+
 		}
 #pragma endregion
+	private: System::Void mainForm_Load(System::Object^ sender, System::EventArgs^ e) {
+		label1->Text = "welcooom";
+	}
 	};
 }
