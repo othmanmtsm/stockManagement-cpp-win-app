@@ -82,7 +82,7 @@ namespace stockManagement {
 		}
 #pragma endregion
 	private: System::Void LoginForm_Load(System::Object^ sender, System::EventArgs^ e) {
-		bunifuTextbox1->Icon->RemovePropertyItem;
+		
 	}
 	};
 }
