@@ -79,7 +79,7 @@ namespace stockManagement {
 		}
 #pragma endregion
 	private: System::Void mainForm_Load(System::Object^ sender, System::EventArgs^ e) {
-		label1->Text = "test bismilah ";
+		label1->Text = "test bismilah 2";
 	}
 	};
 }
