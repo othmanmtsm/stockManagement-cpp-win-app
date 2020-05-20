@@ -59,18 +59,20 @@ namespace stockManagement {
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->Location = System::Drawing::Point(281, 144);
+			this->label1->Location = System::Drawing::Point(211, 117);
+			this->label1->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(46, 17);
+			this->label1->Size = System::Drawing::Size(35, 13);
 			this->label1->TabIndex = 0;
 			this->label1->Text = L"label1";
 			// 
 			// mainForm
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
+			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(733, 390);
+			this->ClientSize = System::Drawing::Size(550, 317);
 			this->Controls->Add(this->label1);
+			this->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->Name = L"mainForm";
 			this->Text = L"mainForm";
 			this->Load += gcnew System::EventHandler(this, &mainForm::mainForm_Load);
