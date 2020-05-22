@@ -116,34 +116,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.5.3">
-      <HintPath>..\..\Bunifu_UI_v1.5.3.dll</HintPath>
+      <HintPath>..\..\..\..\..\Downloads\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
     <Reference Include="FlatButton">
-      <HintPath>..\..\..\Desktop\JControls\FlatButton.dll</HintPath>
+      <HintPath>..\..\..\..\..\Downloads\JControls\JControls\FlatButton.dll</HintPath>
     </Reference>
     <Reference Include="JDragControl">
-      <HintPath>..\..\..\Desktop\JControls\JDragControl.dll</HintPath>
-    </Reference>
-    <Reference Include="JGradient Panel">
-      <HintPath>..\..\..\Desktop\JControls\JGradient Panel.dll</HintPath>
-    </Reference>
-    <Reference Include="JImageButton">
-      <HintPath>..\..\..\Desktop\JControls\JImageButton.dll</HintPath>
-    </Reference>
-    <Reference Include="JMaterialTextbox">
-      <HintPath>..\..\..\Desktop\JControls\JMaterialTextbox.dll</HintPath>
-    </Reference>
-    <Reference Include="JMetroTextBox">
-      <HintPath>..\..\..\Desktop\JControls\JMetroTextBox.dll</HintPath>
+      <HintPath>..\..\..\..\..\Downloads\JControls\JControls\JDragControl.dll</HintPath>
     </Reference>
     <Reference Include="JTextBox">
-      <HintPath>..\..\..\Downloads\JTextBox.dll</HintPath>
-    </Reference>
-    <Reference Include="JTextBox2">
-      <HintPath>..\..\..\Desktop\JControls\JTextBox2.dll</HintPath>
-    </Reference>
-    <Reference Include="JThinButton">
-      <HintPath>..\..\..\Desktop\JControls\JThinButton.dll</HintPath>
+      <HintPath>C:\Users\othman\Desktop\JTextBox.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
