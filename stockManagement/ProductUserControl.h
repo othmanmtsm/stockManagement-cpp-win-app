@@ -102,10 +102,10 @@ namespace stockManagement {
 		void InitializeComponent(void)
 		{
 			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(ProductUserControl::typeid));
-			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle1 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle2 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle3 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle4 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle5 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle6 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle7 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle8 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
 			this->panel2 = (gcnew System::Windows::Forms::Panel());
 			this->productNav = (gcnew System::Windows::Forms::Panel());
@@ -340,9 +340,11 @@ namespace stockManagement {
 			// 
 			// bunifuMetroTextbox1
 			// 
-			this->bunifuMetroTextbox1->BorderColorFocused = System::Drawing::Color::Blue;
+			this->bunifuMetroTextbox1->BorderColorFocused = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(20)),
+				static_cast<System::Int32>(static_cast<System::Byte>(119)), static_cast<System::Int32>(static_cast<System::Byte>(198)));
 			this->bunifuMetroTextbox1->BorderColorIdle = System::Drawing::Color::Silver;
-			this->bunifuMetroTextbox1->BorderColorMouseHover = System::Drawing::Color::Blue;
+			this->bunifuMetroTextbox1->BorderColorMouseHover = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(20)),
+				static_cast<System::Int32>(static_cast<System::Byte>(119)), static_cast<System::Int32>(static_cast<System::Byte>(198)));
 			this->bunifuMetroTextbox1->BorderThickness = 1;
 			this->bunifuMetroTextbox1->Cursor = System::Windows::Forms::Cursors::IBeam;
 			this->bunifuMetroTextbox1->Dock = System::Windows::Forms::DockStyle::Left;
@@ -357,6 +359,7 @@ namespace stockManagement {
 			this->bunifuMetroTextbox1->TabIndex = 10;
 			this->bunifuMetroTextbox1->Text = L"bunifuMetroTextbox1";
 			this->bunifuMetroTextbox1->TextAlign = System::Windows::Forms::HorizontalAlignment::Left;
+			this->bunifuMetroTextbox1->Enter += gcnew System::EventHandler(this, &ProductUserControl::bunifuMetroTextbox1_Enter);
 			// 
 			// panel6
 			// 
@@ -376,39 +379,39 @@ namespace stockManagement {
 			// 
 			// ProductGridView
 			// 
-			dataGridViewCellStyle1->BackColor = System::Drawing::Color::White;
-			this->ProductGridView->AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+			dataGridViewCellStyle5->BackColor = System::Drawing::Color::White;
+			this->ProductGridView->AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
 			this->ProductGridView->AutoSizeColumnsMode = System::Windows::Forms::DataGridViewAutoSizeColumnsMode::Fill;
 			this->ProductGridView->BackgroundColor = System::Drawing::Color::White;
 			this->ProductGridView->BorderStyle = System::Windows::Forms::BorderStyle::None;
 			this->ProductGridView->CellBorderStyle = System::Windows::Forms::DataGridViewCellBorderStyle::None;
 			this->ProductGridView->ColumnHeadersBorderStyle = System::Windows::Forms::DataGridViewHeaderBorderStyle::None;
-			dataGridViewCellStyle2->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleLeft;
-			dataGridViewCellStyle2->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(20)), static_cast<System::Int32>(static_cast<System::Byte>(119)),
+			dataGridViewCellStyle6->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleLeft;
+			dataGridViewCellStyle6->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(20)), static_cast<System::Int32>(static_cast<System::Byte>(119)),
 				static_cast<System::Int32>(static_cast<System::Byte>(198)));
-			dataGridViewCellStyle2->Font = (gcnew System::Drawing::Font(L"Century Gothic", 11));
-			dataGridViewCellStyle2->ForeColor = System::Drawing::Color::White;
-			dataGridViewCellStyle2->SelectionBackColor = System::Drawing::SystemColors::Highlight;
-			dataGridViewCellStyle2->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
-			dataGridViewCellStyle2->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
-			this->ProductGridView->ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+			dataGridViewCellStyle6->Font = (gcnew System::Drawing::Font(L"Century Gothic", 11));
+			dataGridViewCellStyle6->ForeColor = System::Drawing::Color::White;
+			dataGridViewCellStyle6->SelectionBackColor = System::Drawing::SystemColors::Highlight;
+			dataGridViewCellStyle6->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
+			dataGridViewCellStyle6->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
+			this->ProductGridView->ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
 			this->ProductGridView->ColumnHeadersHeight = 50;
 			this->ProductGridView->Columns->AddRange(gcnew cli::array< System::Windows::Forms::DataGridViewColumn^  >(4) {
 				this->Column1,
 					this->Column2, this->Column3, this->Column4
 			});
-			dataGridViewCellStyle3->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleLeft;
-			dataGridViewCellStyle3->BackColor = System::Drawing::Color::White;
-			dataGridViewCellStyle3->Font = (gcnew System::Drawing::Font(L"Segoe UI Semibold", 9.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			dataGridViewCellStyle7->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleLeft;
+			dataGridViewCellStyle7->BackColor = System::Drawing::Color::White;
+			dataGridViewCellStyle7->Font = (gcnew System::Drawing::Font(L"Segoe UI Semibold", 9.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			dataGridViewCellStyle3->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(41)), static_cast<System::Int32>(static_cast<System::Byte>(45)),
+			dataGridViewCellStyle7->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(41)), static_cast<System::Int32>(static_cast<System::Byte>(45)),
 				static_cast<System::Int32>(static_cast<System::Byte>(62)));
-			dataGridViewCellStyle3->SelectionBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(223)),
+			dataGridViewCellStyle7->SelectionBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(223)),
 				static_cast<System::Int32>(static_cast<System::Byte>(230)), static_cast<System::Int32>(static_cast<System::Byte>(253)));
-			dataGridViewCellStyle3->SelectionForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(41)),
+			dataGridViewCellStyle7->SelectionForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(41)),
 				static_cast<System::Int32>(static_cast<System::Byte>(45)), static_cast<System::Int32>(static_cast<System::Byte>(62)));
-			dataGridViewCellStyle3->WrapMode = System::Windows::Forms::DataGridViewTriState::False;
-			this->ProductGridView->DefaultCellStyle = dataGridViewCellStyle3;
+			dataGridViewCellStyle7->WrapMode = System::Windows::Forms::DataGridViewTriState::False;
+			this->ProductGridView->DefaultCellStyle = dataGridViewCellStyle7;
 			this->ProductGridView->Dock = System::Windows::Forms::DockStyle::Fill;
 			this->ProductGridView->DoubleBuffered = true;
 			this->ProductGridView->EnableHeadersVisualStyles = false;
@@ -421,8 +424,8 @@ namespace stockManagement {
 			this->ProductGridView->RowHeadersBorderStyle = System::Windows::Forms::DataGridViewHeaderBorderStyle::None;
 			this->ProductGridView->RowHeadersVisible = false;
 			this->ProductGridView->RowHeadersWidthSizeMode = System::Windows::Forms::DataGridViewRowHeadersWidthSizeMode::AutoSizeToFirstHeader;
-			dataGridViewCellStyle4->BackColor = System::Drawing::Color::White;
-			this->ProductGridView->RowsDefaultCellStyle = dataGridViewCellStyle4;
+			dataGridViewCellStyle8->BackColor = System::Drawing::Color::White;
+			this->ProductGridView->RowsDefaultCellStyle = dataGridViewCellStyle8;
 			this->ProductGridView->RowTemplate->DividerHeight = 1;
 			this->ProductGridView->RowTemplate->Height = 40;
 			this->ProductGridView->SelectionMode = System::Windows::Forms::DataGridViewSelectionMode::FullRowSelect;
@@ -499,6 +502,9 @@ private: System::Void AddProduct_Click(System::Object^ sender, System::EventArgs
 private: System::Void bunifuImageButton1_Click(System::Object^ sender, System::EventArgs^ e) {
 	ProductModify^ ModifyForm = gcnew ProductModify();
 	ModifyForm->Show();
+}
+private: System::Void bunifuMetroTextbox1_Enter(System::Object^ sender, System::EventArgs^ e) {
+	bunifuMetroTextbox1->Text = "";
 }
 };
 }
