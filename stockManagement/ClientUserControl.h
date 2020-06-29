@@ -457,7 +457,7 @@ namespace stockManagement {
 
 		}
 #pragma endregion
-SqlConnection^ cnx = gcnew SqlConnection("Data Source = sql5047.site4now.net; Initial Catalog = DB_A61B88_storemgmnt; User id = DB_A61B88_storemgmnt_admin; Password = Secretpassword11");
+SqlConnection^ cnx = gcnew SqlConnection("Data Source = .; Initial Catalog = DB_A61B88_storemgmnt; Integrated Security = true");
 private: System::Void ClientUserControl_Load(System::Object^ sender, System::EventArgs^ e) {
 	getClients();
 }

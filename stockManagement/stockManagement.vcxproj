@@ -121,11 +121,17 @@
     <Reference Include="FlatButton">
       <HintPath>..\..\..\..\..\Downloads\JControls\JControls\FlatButton.dll</HintPath>
     </Reference>
+    <Reference Include="JMaterialTextbox">
+      <HintPath>..\..\..\..\..\Downloads\JControls\JControls\JMaterialTextbox.dll</HintPath>
+    </Reference>
     <Reference Include="JMetroTextBox">
       <HintPath>..\..\..\..\..\Downloads\JControls\JControls\JMetroTextBox.dll</HintPath>
     </Reference>
     <Reference Include="JTextBox">
       <HintPath>C:\Users\othman\Desktop\JTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="JTextBox2">
+      <HintPath>..\..\..\..\..\Downloads\JControls\JControls\JTextBox2.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />

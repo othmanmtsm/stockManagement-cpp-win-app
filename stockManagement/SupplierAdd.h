@@ -111,7 +111,8 @@ namespace stockManagement {
 			this->bunifuFlatButton1->IconVisible = false;
 			this->bunifuFlatButton1->IconZoom = 90;
 			this->bunifuFlatButton1->IsTab = false;
-			this->bunifuFlatButton1->Location = System::Drawing::Point(72, 555);
+			this->bunifuFlatButton1->Location = System::Drawing::Point(96, 683);
+			this->bunifuFlatButton1->Margin = System::Windows::Forms::Padding(5, 5, 5, 5);
 			this->bunifuFlatButton1->Name = L"bunifuFlatButton1";
 			this->bunifuFlatButton1->Normalcolor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(20)),
 				static_cast<System::Int32>(static_cast<System::Byte>(119)), static_cast<System::Int32>(static_cast<System::Byte>(198)));
@@ -119,12 +120,13 @@ namespace stockManagement {
 				static_cast<System::Int32>(static_cast<System::Byte>(109)), static_cast<System::Int32>(static_cast<System::Byte>(184)));
 			this->bunifuFlatButton1->OnHoverTextColor = System::Drawing::Color::White;
 			this->bunifuFlatButton1->selected = false;
-			this->bunifuFlatButton1->Size = System::Drawing::Size(248, 51);
+			this->bunifuFlatButton1->Size = System::Drawing::Size(331, 63);
 			this->bunifuFlatButton1->TabIndex = 110;
 			this->bunifuFlatButton1->Text = L"Add";
 			this->bunifuFlatButton1->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			this->bunifuFlatButton1->Textcolor = System::Drawing::Color::White;
 			this->bunifuFlatButton1->TextFont = (gcnew System::Drawing::Font(L"Segoe UI", 14.25F));
+			this->bunifuFlatButton1->Click += gcnew System::EventHandler(this, &SupplierAdd::bunifuFlatButton1_Click);
 			// 
 			// cancelBtn
 			// 
@@ -149,15 +151,15 @@ namespace stockManagement {
 			this->cancelBtn->IconVisible = false;
 			this->cancelBtn->IconZoom = 90;
 			this->cancelBtn->IsTab = false;
-			this->cancelBtn->Location = System::Drawing::Point(341, 555);
-			this->cancelBtn->Margin = System::Windows::Forms::Padding(3, 4, 3, 4);
+			this->cancelBtn->Location = System::Drawing::Point(455, 683);
+			this->cancelBtn->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			this->cancelBtn->Name = L"cancelBtn";
 			this->cancelBtn->Normalcolor = System::Drawing::Color::White;
 			this->cancelBtn->OnHovercolor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(18)), static_cast<System::Int32>(static_cast<System::Byte>(109)),
 				static_cast<System::Int32>(static_cast<System::Byte>(184)));
 			this->cancelBtn->OnHoverTextColor = System::Drawing::Color::White;
 			this->cancelBtn->selected = false;
-			this->cancelBtn->Size = System::Drawing::Size(144, 51);
+			this->cancelBtn->Size = System::Drawing::Size(192, 63);
 			this->cancelBtn->TabIndex = 109;
 			this->cancelBtn->Text = L"Cancel";
 			this->cancelBtn->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -178,14 +180,14 @@ namespace stockManagement {
 				static_cast<System::Byte>(0)));
 			this->jText_Box1->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(64)));
-			this->jText_Box1->Location = System::Drawing::Point(339, 553);
-			this->jText_Box1->Margin = System::Windows::Forms::Padding(5);
+			this->jText_Box1->Location = System::Drawing::Point(452, 681);
+			this->jText_Box1->Margin = System::Windows::Forms::Padding(7, 6, 7, 6);
 			this->jText_Box1->MaxLength = 32767;
 			this->jText_Box1->Name = L"jText_Box1";
 			this->jText_Box1->onFocusBorderColor = System::Drawing::Color::Magenta;
 			this->jText_Box1->PasswordChar = '\0';
 			this->jText_Box1->RoundedBorder = 0;
-			this->jText_Box1->Size = System::Drawing::Size(146, 53);
+			this->jText_Box1->Size = System::Drawing::Size(195, 65);
 			this->jText_Box1->TabIndex = 108;
 			this->jText_Box1->TextAlign = System::Windows::Forms::HorizontalAlignment::Left;
 			this->jText_Box1->TextColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)),
@@ -198,9 +200,10 @@ namespace stockManagement {
 			this->bunifuCustomLabel3->Font = (gcnew System::Drawing::Font(L"Segoe UI", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->bunifuCustomLabel3->ForeColor = System::Drawing::Color::DimGray;
-			this->bunifuCustomLabel3->Location = System::Drawing::Point(71, 322);
+			this->bunifuCustomLabel3->Location = System::Drawing::Point(95, 396);
+			this->bunifuCustomLabel3->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->bunifuCustomLabel3->Name = L"bunifuCustomLabel3";
-			this->bunifuCustomLabel3->Size = System::Drawing::Size(48, 21);
+			this->bunifuCustomLabel3->Size = System::Drawing::Size(59, 28);
 			this->bunifuCustomLabel3->TabIndex = 105;
 			this->bunifuCustomLabel3->Text = L"Email";
 			// 
@@ -214,13 +217,13 @@ namespace stockManagement {
 				static_cast<System::Int32>(static_cast<System::Byte>(124)), static_cast<System::Int32>(static_cast<System::Byte>(200)));
 			this->emailTx->BorderThickness = 1;
 			this->emailTx->Cursor = System::Windows::Forms::Cursors::IBeam;
-			this->emailTx->Font = (gcnew System::Drawing::Font(L"Century Gothic", 13));
+			this->emailTx->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13));
 			this->emailTx->ForeColor = System::Drawing::Color::DimGray;
 			this->emailTx->isPassword = false;
-			this->emailTx->Location = System::Drawing::Point(72, 350);
+			this->emailTx->Location = System::Drawing::Point(96, 431);
 			this->emailTx->Margin = System::Windows::Forms::Padding(0);
 			this->emailTx->Name = L"emailTx";
-			this->emailTx->Size = System::Drawing::Size(413, 35);
+			this->emailTx->Size = System::Drawing::Size(551, 43);
 			this->emailTx->TabIndex = 106;
 			this->emailTx->TextAlign = System::Windows::Forms::HorizontalAlignment::Left;
 			// 
@@ -229,9 +232,10 @@ namespace stockManagement {
 			this->panel4->BackColor = System::Drawing::Color::WhiteSmoke;
 			this->panel4->Dock = System::Windows::Forms::DockStyle::Bottom;
 			this->panel4->ForeColor = System::Drawing::Color::WhiteSmoke;
-			this->panel4->Location = System::Drawing::Point(8, 664);
+			this->panel4->Location = System::Drawing::Point(11, 817);
+			this->panel4->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->panel4->Name = L"panel4";
-			this->panel4->Size = System::Drawing::Size(540, 8);
+			this->panel4->Size = System::Drawing::Size(719, 10);
 			this->panel4->TabIndex = 103;
 			// 
 			// panel3
@@ -239,9 +243,10 @@ namespace stockManagement {
 			this->panel3->BackColor = System::Drawing::Color::WhiteSmoke;
 			this->panel3->Dock = System::Windows::Forms::DockStyle::Right;
 			this->panel3->ForeColor = System::Drawing::Color::Gainsboro;
-			this->panel3->Location = System::Drawing::Point(548, 8);
+			this->panel3->Location = System::Drawing::Point(730, 10);
+			this->panel3->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->panel3->Name = L"panel3";
-			this->panel3->Size = System::Drawing::Size(8, 664);
+			this->panel3->Size = System::Drawing::Size(11, 817);
 			this->panel3->TabIndex = 102;
 			// 
 			// panel2
@@ -249,9 +254,10 @@ namespace stockManagement {
 			this->panel2->BackColor = System::Drawing::Color::WhiteSmoke;
 			this->panel2->Dock = System::Windows::Forms::DockStyle::Top;
 			this->panel2->ForeColor = System::Drawing::Color::WhiteSmoke;
-			this->panel2->Location = System::Drawing::Point(8, 0);
+			this->panel2->Location = System::Drawing::Point(11, 0);
+			this->panel2->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->panel2->Name = L"panel2";
-			this->panel2->Size = System::Drawing::Size(548, 8);
+			this->panel2->Size = System::Drawing::Size(730, 10);
 			this->panel2->TabIndex = 101;
 			// 
 			// panel1
@@ -260,8 +266,9 @@ namespace stockManagement {
 			this->panel1->Dock = System::Windows::Forms::DockStyle::Left;
 			this->panel1->ForeColor = System::Drawing::Color::Gainsboro;
 			this->panel1->Location = System::Drawing::Point(0, 0);
+			this->panel1->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->panel1->Name = L"panel1";
-			this->panel1->Size = System::Drawing::Size(8, 672);
+			this->panel1->Size = System::Drawing::Size(11, 827);
 			this->panel1->TabIndex = 100;
 			// 
 			// bunifuSeparator1
@@ -270,21 +277,22 @@ namespace stockManagement {
 			this->bunifuSeparator1->LineColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(220)),
 				static_cast<System::Int32>(static_cast<System::Byte>(220)), static_cast<System::Int32>(static_cast<System::Byte>(220)));
 			this->bunifuSeparator1->LineThickness = 1;
-			this->bunifuSeparator1->Location = System::Drawing::Point(28, 90);
-			this->bunifuSeparator1->Margin = System::Windows::Forms::Padding(4);
+			this->bunifuSeparator1->Location = System::Drawing::Point(37, 111);
+			this->bunifuSeparator1->Margin = System::Windows::Forms::Padding(5, 5, 5, 5);
 			this->bunifuSeparator1->Name = L"bunifuSeparator1";
-			this->bunifuSeparator1->Size = System::Drawing::Size(493, 35);
+			this->bunifuSeparator1->Size = System::Drawing::Size(657, 43);
 			this->bunifuSeparator1->TabIndex = 99;
 			this->bunifuSeparator1->Transparency = 255;
 			this->bunifuSeparator1->Vertical = false;
 			// 
 			// bunifuCustomLabel6
 			// 
-			this->bunifuCustomLabel6->Font = (gcnew System::Drawing::Font(L"Century Gothic", 18));
+			this->bunifuCustomLabel6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18));
 			this->bunifuCustomLabel6->ForeColor = System::Drawing::Color::DimGray;
-			this->bunifuCustomLabel6->Location = System::Drawing::Point(160, 49);
+			this->bunifuCustomLabel6->Location = System::Drawing::Point(213, 60);
+			this->bunifuCustomLabel6->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->bunifuCustomLabel6->Name = L"bunifuCustomLabel6";
-			this->bunifuCustomLabel6->Size = System::Drawing::Size(255, 37);
+			this->bunifuCustomLabel6->Size = System::Drawing::Size(340, 46);
 			this->bunifuCustomLabel6->TabIndex = 94;
 			this->bunifuCustomLabel6->Text = L"Add a New Supplier";
 			// 
@@ -294,9 +302,10 @@ namespace stockManagement {
 			this->bunifuCustomLabel5->Font = (gcnew System::Drawing::Font(L"Segoe UI", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->bunifuCustomLabel5->ForeColor = System::Drawing::Color::DimGray;
-			this->bunifuCustomLabel5->Location = System::Drawing::Point(72, 406);
+			this->bunifuCustomLabel5->Location = System::Drawing::Point(96, 500);
+			this->bunifuCustomLabel5->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->bunifuCustomLabel5->Name = L"bunifuCustomLabel5";
-			this->bunifuCustomLabel5->Size = System::Drawing::Size(65, 21);
+			this->bunifuCustomLabel5->Size = System::Drawing::Size(80, 28);
 			this->bunifuCustomLabel5->TabIndex = 98;
 			this->bunifuCustomLabel5->Text = L"Adresse";
 			// 
@@ -306,9 +315,10 @@ namespace stockManagement {
 			this->bunifuCustomLabel2->Font = (gcnew System::Drawing::Font(L"Segoe UI", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->bunifuCustomLabel2->ForeColor = System::Drawing::Color::DimGray;
-			this->bunifuCustomLabel2->Location = System::Drawing::Point(71, 230);
+			this->bunifuCustomLabel2->Location = System::Drawing::Point(95, 283);
+			this->bunifuCustomLabel2->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->bunifuCustomLabel2->Name = L"bunifuCustomLabel2";
-			this->bunifuCustomLabel2->Size = System::Drawing::Size(84, 21);
+			this->bunifuCustomLabel2->Size = System::Drawing::Size(103, 28);
 			this->bunifuCustomLabel2->TabIndex = 97;
 			this->bunifuCustomLabel2->Text = L"Last Name";
 			// 
@@ -318,9 +328,10 @@ namespace stockManagement {
 			this->bunifuCustomLabel1->Font = (gcnew System::Drawing::Font(L"Segoe UI", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->bunifuCustomLabel1->ForeColor = System::Drawing::Color::DimGray;
-			this->bunifuCustomLabel1->Location = System::Drawing::Point(72, 134);
+			this->bunifuCustomLabel1->Location = System::Drawing::Point(96, 165);
+			this->bunifuCustomLabel1->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->bunifuCustomLabel1->Name = L"bunifuCustomLabel1";
-			this->bunifuCustomLabel1->Size = System::Drawing::Size(86, 21);
+			this->bunifuCustomLabel1->Size = System::Drawing::Size(106, 28);
 			this->bunifuCustomLabel1->TabIndex = 96;
 			this->bunifuCustomLabel1->Text = L"First Name";
 			// 
@@ -334,13 +345,13 @@ namespace stockManagement {
 				static_cast<System::Int32>(static_cast<System::Byte>(124)), static_cast<System::Int32>(static_cast<System::Byte>(200)));
 			this->NomTextBox->BorderThickness = 1;
 			this->NomTextBox->Cursor = System::Windows::Forms::Cursors::IBeam;
-			this->NomTextBox->Font = (gcnew System::Drawing::Font(L"Century Gothic", 13));
+			this->NomTextBox->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13));
 			this->NomTextBox->ForeColor = System::Drawing::Color::DimGray;
 			this->NomTextBox->isPassword = false;
-			this->NomTextBox->Location = System::Drawing::Point(72, 166);
+			this->NomTextBox->Location = System::Drawing::Point(96, 204);
 			this->NomTextBox->Margin = System::Windows::Forms::Padding(0);
 			this->NomTextBox->Name = L"NomTextBox";
-			this->NomTextBox->Size = System::Drawing::Size(413, 35);
+			this->NomTextBox->Size = System::Drawing::Size(551, 43);
 			this->NomTextBox->TabIndex = 95;
 			this->NomTextBox->TextAlign = System::Windows::Forms::HorizontalAlignment::Left;
 			// 
@@ -354,32 +365,33 @@ namespace stockManagement {
 				static_cast<System::Int32>(static_cast<System::Byte>(124)), static_cast<System::Int32>(static_cast<System::Byte>(200)));
 			this->lastNameTx->BorderThickness = 1;
 			this->lastNameTx->Cursor = System::Windows::Forms::Cursors::IBeam;
-			this->lastNameTx->Font = (gcnew System::Drawing::Font(L"Century Gothic", 13));
+			this->lastNameTx->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13));
 			this->lastNameTx->ForeColor = System::Drawing::Color::DimGray;
 			this->lastNameTx->isPassword = false;
-			this->lastNameTx->Location = System::Drawing::Point(72, 258);
+			this->lastNameTx->Location = System::Drawing::Point(96, 318);
 			this->lastNameTx->Margin = System::Windows::Forms::Padding(0);
 			this->lastNameTx->Name = L"lastNameTx";
-			this->lastNameTx->Size = System::Drawing::Size(413, 35);
+			this->lastNameTx->Size = System::Drawing::Size(551, 43);
 			this->lastNameTx->TabIndex = 104;
 			this->lastNameTx->TextAlign = System::Windows::Forms::HorizontalAlignment::Left;
 			// 
 			// AdresseTx
 			// 
-			this->AdresseTx->Font = (gcnew System::Drawing::Font(L"Century Gothic", 13));
+			this->AdresseTx->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13));
 			this->AdresseTx->ForeColor = System::Drawing::Color::DimGray;
-			this->AdresseTx->Location = System::Drawing::Point(72, 434);
+			this->AdresseTx->Location = System::Drawing::Point(96, 534);
+			this->AdresseTx->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->AdresseTx->Multiline = true;
 			this->AdresseTx->Name = L"AdresseTx";
-			this->AdresseTx->Size = System::Drawing::Size(413, 72);
+			this->AdresseTx->Size = System::Drawing::Size(549, 88);
 			this->AdresseTx->TabIndex = 107;
 			// 
 			// SupplierAdd
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::White;
-			this->ClientSize = System::Drawing::Size(556, 672);
+			this->ClientSize = System::Drawing::Size(741, 827);
 			this->Controls->Add(this->bunifuFlatButton1);
 			this->Controls->Add(this->cancelBtn);
 			this->Controls->Add(this->jText_Box1);
@@ -399,6 +411,7 @@ namespace stockManagement {
 			this->Controls->Add(this->AdresseTx);
 			this->Cursor = System::Windows::Forms::Cursors::Arrow;
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::None;
+			this->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->Name = L"SupplierAdd";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"SupplierAdd";
@@ -407,8 +420,21 @@ namespace stockManagement {
 
 		}
 #pragma endregion
+	SqlConnection^ cnx = gcnew SqlConnection("Data Source = .; Initial Catalog = DB_A61B88_storemgmnt; Integrated Security = true");
 	private: System::Void cancelBtn_Click(System::Object^ sender, System::EventArgs^ e) {
 		this->Hide();
 	}
+private: System::Void bunifuFlatButton1_Click(System::Object^ sender, System::EventArgs^ e) {
+	SqlCommand^ cmd = gcnew SqlCommand("insert into Fournisseur(name,lastname,adresse,email) values(@name,@lastname,@address,@email)", cnx);
+	cnx->Open();
+	cmd->Parameters->AddWithValue("name", NomTextBox->Text);
+	cmd->Parameters->AddWithValue("lastname", lastNameTx->Text);
+	cmd->Parameters->AddWithValue("address", AdresseTx->Text);
+	cmd->Parameters->AddWithValue("email", emailTx->Text);
+	cmd->ExecuteNonQuery();
+	cnx->Close();
+	MessageBox::Show(String::Format("{0} added successfuly !!", NomTextBox->Text));
+	this->Hide();
+}
 };
 }
