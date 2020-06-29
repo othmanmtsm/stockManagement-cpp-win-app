@@ -119,7 +119,7 @@ namespace stockManagement {
 			this->navBar->Dock = System::Windows::Forms::DockStyle::Top;
 			this->navBar->LeftSahddow = false;
 			this->navBar->Location = System::Drawing::Point(0, 0);
-			this->navBar->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->navBar->Margin = System::Windows::Forms::Padding(4);
 			this->navBar->Name = L"navBar";
 			this->navBar->RightSahddow = true;
 			this->navBar->ShadowDepth = 20;
@@ -130,7 +130,7 @@ namespace stockManagement {
 			// 
 			this->botMainMarg->Dock = System::Windows::Forms::DockStyle::Bottom;
 			this->botMainMarg->Location = System::Drawing::Point(0, 866);
-			this->botMainMarg->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->botMainMarg->Margin = System::Windows::Forms::Padding(4);
 			this->botMainMarg->Name = L"botMainMarg";
 			this->botMainMarg->Size = System::Drawing::Size(1800, 31);
 			this->botMainMarg->TabIndex = 1;
@@ -140,7 +140,7 @@ namespace stockManagement {
 			this->topMainMarg->BackColor = System::Drawing::Color::WhiteSmoke;
 			this->topMainMarg->Dock = System::Windows::Forms::DockStyle::Top;
 			this->topMainMarg->Location = System::Drawing::Point(0, 100);
-			this->topMainMarg->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->topMainMarg->Margin = System::Windows::Forms::Padding(4);
 			this->topMainMarg->Name = L"topMainMarg";
 			this->topMainMarg->Size = System::Drawing::Size(1800, 31);
 			this->topMainMarg->TabIndex = 2;
@@ -149,7 +149,7 @@ namespace stockManagement {
 			// 
 			this->rightMainMarg->Dock = System::Windows::Forms::DockStyle::Right;
 			this->rightMainMarg->Location = System::Drawing::Point(1767, 131);
-			this->rightMainMarg->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->rightMainMarg->Margin = System::Windows::Forms::Padding(4);
 			this->rightMainMarg->Name = L"rightMainMarg";
 			this->rightMainMarg->Size = System::Drawing::Size(33, 735);
 			this->rightMainMarg->TabIndex = 3;
@@ -158,7 +158,7 @@ namespace stockManagement {
 			// 
 			this->leftMainMarg->Dock = System::Windows::Forms::DockStyle::Left;
 			this->leftMainMarg->Location = System::Drawing::Point(0, 131);
-			this->leftMainMarg->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->leftMainMarg->Margin = System::Windows::Forms::Padding(4);
 			this->leftMainMarg->Name = L"leftMainMarg";
 			this->leftMainMarg->Size = System::Drawing::Size(33, 735);
 			this->leftMainMarg->TabIndex = 4;
@@ -180,7 +180,7 @@ namespace stockManagement {
 			this->sidebar->Controls->Add(this->panel1);
 			this->sidebar->Dock = System::Windows::Forms::DockStyle::Left;
 			this->sidebar->Location = System::Drawing::Point(33, 131);
-			this->sidebar->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->sidebar->Margin = System::Windows::Forms::Padding(4);
 			this->sidebar->Name = L"sidebar";
 			this->sidebar->Size = System::Drawing::Size(408, 735);
 			this->sidebar->TabIndex = 5;
@@ -204,7 +204,7 @@ namespace stockManagement {
 			this->SideBarBuyBtn->ImageRight = nullptr;
 			this->SideBarBuyBtn->LeftPictureColor = System::Drawing::Color::Transparent;
 			this->SideBarBuyBtn->Location = System::Drawing::Point(33, 355);
-			this->SideBarBuyBtn->Margin = System::Windows::Forms::Padding(5, 5, 5, 5);
+			this->SideBarBuyBtn->Margin = System::Windows::Forms::Padding(5);
 			this->SideBarBuyBtn->Name = L"SideBarBuyBtn";
 			this->SideBarBuyBtn->PaddingLeftPicture = System::Windows::Forms::Padding(0);
 			this->SideBarBuyBtn->PaddingRightPicture = System::Windows::Forms::Padding(0);
@@ -219,7 +219,7 @@ namespace stockManagement {
 			// 
 			this->panel7->Dock = System::Windows::Forms::DockStyle::Top;
 			this->panel7->Location = System::Drawing::Point(33, 333);
-			this->panel7->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->panel7->Margin = System::Windows::Forms::Padding(4);
 			this->panel7->Name = L"panel7";
 			this->panel7->Size = System::Drawing::Size(342, 22);
 			this->panel7->TabIndex = 10;
@@ -243,7 +243,7 @@ namespace stockManagement {
 			this->SideBarSellBtn->ImageRight = nullptr;
 			this->SideBarSellBtn->LeftPictureColor = System::Drawing::Color::Transparent;
 			this->SideBarSellBtn->Location = System::Drawing::Point(33, 274);
-			this->SideBarSellBtn->Margin = System::Windows::Forms::Padding(5, 5, 5, 5);
+			this->SideBarSellBtn->Margin = System::Windows::Forms::Padding(5);
 			this->SideBarSellBtn->Name = L"SideBarSellBtn";
 			this->SideBarSellBtn->PaddingLeftPicture = System::Windows::Forms::Padding(0);
 			this->SideBarSellBtn->PaddingRightPicture = System::Windows::Forms::Padding(0);
@@ -258,7 +258,7 @@ namespace stockManagement {
 			// 
 			this->panel6->Dock = System::Windows::Forms::DockStyle::Top;
 			this->panel6->Location = System::Drawing::Point(33, 252);
-			this->panel6->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->panel6->Margin = System::Windows::Forms::Padding(4);
 			this->panel6->Name = L"panel6";
 			this->panel6->Size = System::Drawing::Size(342, 22);
 			this->panel6->TabIndex = 8;
@@ -282,7 +282,7 @@ namespace stockManagement {
 			this->SideBarFournisseurBtn->ImageRight = nullptr;
 			this->SideBarFournisseurBtn->LeftPictureColor = System::Drawing::Color::Transparent;
 			this->SideBarFournisseurBtn->Location = System::Drawing::Point(33, 193);
-			this->SideBarFournisseurBtn->Margin = System::Windows::Forms::Padding(5, 5, 5, 5);
+			this->SideBarFournisseurBtn->Margin = System::Windows::Forms::Padding(5);
 			this->SideBarFournisseurBtn->Name = L"SideBarFournisseurBtn";
 			this->SideBarFournisseurBtn->PaddingLeftPicture = System::Windows::Forms::Padding(0);
 			this->SideBarFournisseurBtn->PaddingRightPicture = System::Windows::Forms::Padding(0);
@@ -297,7 +297,7 @@ namespace stockManagement {
 			// 
 			this->panel5->Dock = System::Windows::Forms::DockStyle::Top;
 			this->panel5->Location = System::Drawing::Point(33, 171);
-			this->panel5->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->panel5->Margin = System::Windows::Forms::Padding(4);
 			this->panel5->Name = L"panel5";
 			this->panel5->Size = System::Drawing::Size(342, 22);
 			this->panel5->TabIndex = 6;
@@ -321,7 +321,7 @@ namespace stockManagement {
 			this->SideBarClientBtn->ImageRight = nullptr;
 			this->SideBarClientBtn->LeftPictureColor = System::Drawing::Color::Transparent;
 			this->SideBarClientBtn->Location = System::Drawing::Point(33, 112);
-			this->SideBarClientBtn->Margin = System::Windows::Forms::Padding(5, 5, 5, 5);
+			this->SideBarClientBtn->Margin = System::Windows::Forms::Padding(5);
 			this->SideBarClientBtn->Name = L"SideBarClientBtn";
 			this->SideBarClientBtn->PaddingLeftPicture = System::Windows::Forms::Padding(0);
 			this->SideBarClientBtn->PaddingRightPicture = System::Windows::Forms::Padding(0);
@@ -336,7 +336,7 @@ namespace stockManagement {
 			// 
 			this->panel4->Dock = System::Windows::Forms::DockStyle::Top;
 			this->panel4->Location = System::Drawing::Point(33, 90);
-			this->panel4->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->panel4->Margin = System::Windows::Forms::Padding(4);
 			this->panel4->Name = L"panel4";
 			this->panel4->Size = System::Drawing::Size(342, 22);
 			this->panel4->TabIndex = 4;
@@ -360,7 +360,7 @@ namespace stockManagement {
 			this->SideBarProductBtn->ImageRight = nullptr;
 			this->SideBarProductBtn->LeftPictureColor = System::Drawing::Color::Transparent;
 			this->SideBarProductBtn->Location = System::Drawing::Point(33, 31);
-			this->SideBarProductBtn->Margin = System::Windows::Forms::Padding(5, 5, 5, 5);
+			this->SideBarProductBtn->Margin = System::Windows::Forms::Padding(5);
 			this->SideBarProductBtn->Name = L"SideBarProductBtn";
 			this->SideBarProductBtn->PaddingLeftPicture = System::Windows::Forms::Padding(0);
 			this->SideBarProductBtn->PaddingRightPicture = System::Windows::Forms::Padding(0);
@@ -375,7 +375,7 @@ namespace stockManagement {
 			// 
 			this->panel3->Dock = System::Windows::Forms::DockStyle::Right;
 			this->panel3->Location = System::Drawing::Point(375, 31);
-			this->panel3->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->panel3->Margin = System::Windows::Forms::Padding(4);
 			this->panel3->Name = L"panel3";
 			this->panel3->Size = System::Drawing::Size(33, 704);
 			this->panel3->TabIndex = 2;
@@ -384,7 +384,7 @@ namespace stockManagement {
 			// 
 			this->panel2->Dock = System::Windows::Forms::DockStyle::Left;
 			this->panel2->Location = System::Drawing::Point(0, 31);
-			this->panel2->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->panel2->Margin = System::Windows::Forms::Padding(4);
 			this->panel2->Name = L"panel2";
 			this->panel2->Size = System::Drawing::Size(33, 704);
 			this->panel2->TabIndex = 1;
@@ -393,7 +393,7 @@ namespace stockManagement {
 			// 
 			this->panel1->Dock = System::Windows::Forms::DockStyle::Top;
 			this->panel1->Location = System::Drawing::Point(0, 0);
-			this->panel1->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->panel1->Margin = System::Windows::Forms::Padding(4);
 			this->panel1->Name = L"panel1";
 			this->panel1->Size = System::Drawing::Size(408, 31);
 			this->panel1->TabIndex = 0;
@@ -402,7 +402,7 @@ namespace stockManagement {
 			// 
 			this->sideBarMarg->Dock = System::Windows::Forms::DockStyle::Left;
 			this->sideBarMarg->Location = System::Drawing::Point(441, 131);
-			this->sideBarMarg->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->sideBarMarg->Margin = System::Windows::Forms::Padding(4);
 			this->sideBarMarg->Name = L"sideBarMarg";
 			this->sideBarMarg->Size = System::Drawing::Size(27, 735);
 			this->sideBarMarg->TabIndex = 6;
@@ -412,7 +412,7 @@ namespace stockManagement {
 			this->mainContainer->BackColor = System::Drawing::Color::White;
 			this->mainContainer->Dock = System::Windows::Forms::DockStyle::Fill;
 			this->mainContainer->Location = System::Drawing::Point(468, 131);
-			this->mainContainer->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->mainContainer->Margin = System::Windows::Forms::Padding(4);
 			this->mainContainer->Name = L"mainContainer";
 			this->mainContainer->Size = System::Drawing::Size(1299, 735);
 			this->mainContainer->TabIndex = 7;
@@ -432,10 +432,11 @@ namespace stockManagement {
 			this->Controls->Add(this->topMainMarg);
 			this->Controls->Add(this->botMainMarg);
 			this->Controls->Add(this->navBar);
+			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->Name = L"mainForm";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
-			this->Text = L"mainForm";
+			this->Text = L"Store Management";
 			this->Load += gcnew System::EventHandler(this, &mainForm::mainForm_Load);
 			this->sidebar->ResumeLayout(false);
 			this->ResumeLayout(false);

@@ -158,6 +158,7 @@ namespace stockManagement {
 			this->Controls->Add(this->passwdTxt);
 			this->Controls->Add(this->loginTxt);
 			this->Controls->Add(this->loginBtn);
+			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->Name = L"LoginForm";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"LoginForm";
@@ -178,7 +179,7 @@ namespace stockManagement {
 private: System::Void loginBtn_Click(System::Object^ sender, System::EventArgs^ e) {
 		String^ login = loginTxt->Text;
 		String^ password = passwdTxt->Text;
-		SqlConnection^ cnx = gcnew SqlConnection("Data Source=.;Initial Catalog=DB_A61B88_storemgmnt; Integrated Security=True");
+		SqlConnection^ cnx = gcnew SqlConnection("Data Source = sql5050.site4now.net; Initial Catalog = DB_A63C40_storemgmnt; User id = DB_A63C40_storemgmnt_admin; Password = Secret11");
 		cnx->Open();
 		SqlCommand^ cmd = gcnew SqlCommand("select * from users where login=@login and password=@password",cnx);
 		cmd->Parameters->AddWithValue("login", loginTxt->Text);
@@ -189,7 +190,7 @@ private: System::Void loginBtn_Click(System::Object^ sender, System::EventArgs^ 
 			mainForm^ main = gcnew mainForm();
 			main->ShowDialog();
 		}else{
-			MessageBox::Show(login);
+			MessageBox::Show("error !!");
 		}
 		cnx->Close();
 }

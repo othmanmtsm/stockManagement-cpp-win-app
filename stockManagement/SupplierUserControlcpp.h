@@ -329,6 +329,7 @@ namespace stockManagement {
 			this->bunifuMetroTextbox1->TabIndex = 10;
 			this->bunifuMetroTextbox1->Text = L"Search";
 			this->bunifuMetroTextbox1->TextAlign = System::Windows::Forms::HorizontalAlignment::Left;
+			this->bunifuMetroTextbox1->OnValueChanged += gcnew System::EventHandler(this, &SupplierUserControlcpp::bunifuMetroTextbox1_OnValueChanged);
 			this->bunifuMetroTextbox1->Enter += gcnew System::EventHandler(this, &SupplierUserControlcpp::bunifuMetroTextbox1_Enter);
 			// 
 			// panel6
@@ -453,7 +454,8 @@ namespace stockManagement {
 
 		}
 #pragma endregion
-		SqlConnection^ cnx = gcnew SqlConnection("Data Source = .; Initial Catalog = DB_A61B88_storemgmnt; Integrated Security = true");
+		SqlConnection^ cnx = gcnew SqlConnection("Data Source = sql5050.site4now.net; Initial Catalog = DB_A63C40_storemgmnt; User id = DB_A63C40_storemgmnt_admin; Password = Secret11");
+
 private: System::Void SupplierUserControlcpp_Load(System::Object^ sender, System::EventArgs^ e) {
 	getSupps();
 }
@@ -486,6 +488,9 @@ private: System::Void bunifuImageButton2_Click(System::Object^ sender, System::E
 		cnx->Close();
 	}
 	getSupps();
+}
+private: System::Void bunifuMetroTextbox1_OnValueChanged(System::Object^ sender, System::EventArgs^ e) {
+	((DataTable^)ProductGridView->DataSource)->DefaultView->RowFilter = String::Format("name like '%{0}%' or lastname like '%{0}%' or address like '%{0}%' or email like '%{0}%'", bunifuMetroTextbox1->Text);
 }
 };
 }

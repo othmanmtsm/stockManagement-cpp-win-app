@@ -480,7 +480,8 @@ namespace stockManagement {
 
 		}
 #pragma endregion
-SqlConnection^ cnx = gcnew SqlConnection("Data Source =.; Initial Catalog = DB_A61B88_storemgmnt;Integrated Security = true");
+		SqlConnection^ cnx = gcnew SqlConnection("Data Source = sql5050.site4now.net; Initial Catalog = DB_A63C40_storemgmnt; User id = DB_A63C40_storemgmnt_admin; Password = Secret11");
+
 private: System::Void Products_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void bunifuCustomDataGrid1_CellContentClick(System::Object^ sender, System::Windows::Forms::DataGridViewCellEventArgs^ e) {
